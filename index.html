@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ptaloth</title>
+    <style>
+        body {
+            margin: 0;
+            color: #333;
+        }
+        main {
+            margin-top: 20px;
+        }
+        #switch {
+            -webkit-appearance: none;
+            width: 1em;
+            outline: none;
+        }
+        #switch:after {
+            content: "";
+            position: absolute;
+            top: .25em;
+            border: .5em solid;
+            border-color: transparent transparent transparent #333;
+            margin-left: .25em;
+        }
+        #switch:checked:after {
+            border-color: transparent #333 transparent transparent;
+            margin-left: -.25em;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+<main class="container">
+    <form>
+        <div class="input-group">
+            <input type="text" class="form-control" id="input" placeholder="Enter text"/>
+            <span class="input-group-btn">
+            <button id="clear" class="btn btn-secondary" type="button"><i class="fa fa-remove" aria-hidden="true"></i></button>
+        </span>
+        </div>
+        <div class="input-group">
+            <label class="custom-control custom-checkbox" for="switch">
+                <span>Ptaloth</span>
+                <input type="checkbox" id="switch">
+                <span>English</span>
+            </label>
+        </div>
+    </form>
+</main>
+<canvas id="output"></canvas>
+<script>
+    (function() {
+        function browse (object, action) {
+            for (let key in object) {
+                if (object.hasOwnProperty(key)) {
+                    action(key, object[key], object);
+                }
+            }
+        }
+        Array.prototype.toString = function () {
+            return this.join(", ")
+        };
+
+        let input = document.getElementById("input");
+        let output = document.getElementById("output");
+        let switcher = document.getElementById("switch");
+
+        // Fetch data and parse to json
+        let url = "./data.json";
+        fetch(url).then(function(response) {
+            if (response.ok) {
+                return response.json();
+            }
+        }).then(function(json) {
+            console.log("Json ok");
+
+            // Display ideogram in string
+            function toString (ideogram) {
+                if (json[ideogram]) {
+                    return `${ideogram} (${json[ideogram].meaning})`;
+                }
+                else {
+                    return "";
+                }
+            }
+
+            // Display ideograms in canvas
+            const drawIdeogram = (function(json) {
+                const pi2 = Math.PI * 2;
+
+                let margin = 50;
+                let width = 50;
+                let height = width * 2;
+                let lineWidth = 8;
+
+                output.width = document.body.offsetWidth;
+                let nbPerLine = Math.floor((output.width - margin) / (width + margin));
+                let ctx = output.getContext("2d");
+
+                return function(ideograms) {
+                    let length = ideograms ? ideograms.length : 0;
+                    output.height = Math.ceil(length / nbPerLine) * (height + margin) + margin;
+                    ctx.lineWidth = lineWidth;
+                    ctx.lineCap = "round";
+                    ctx.lineJoin = "round";
+                    ctx.strokeStyle = "#333";
+                    ctx.textAlign = "center";
+                    //ctx.textBaseline = "middle";
+
+                    ctx.beginPath();
+                    for (let i = 0; i < length; ++i) {
+                        let x = margin + (width + margin) * (i % nbPerLine);
+                        let y = margin + (height + margin) * Math.floor(i / nbPerLine);
+
+                        json[ideograms[i]].draw.forEach(function (draw) {
+                            if (Array.isArray(draw)) {
+                                draw.forEach(function (pos, index) {
+                                    let posX = ((pos - 1) % 3) * (width / 2);
+                                    let posY = Math.floor((pos - 1) / 3) * (height / 2);
+                                    if (!index) {
+                                        ctx.moveTo(x + posX, y + posY);
+                                    }
+                                    ctx.lineTo(x + posX, y + posY);
+                                });
+                            }
+                            else {
+                                let posY;
+                                if (draw === "top") {
+                                    posY = height / 4;
+                                }
+                                else if (draw === "bottom") {
+                                    posY = height * 3 / 4;
+                                }
+                                ctx.moveTo(x + width, y + posY);
+                                ctx.arc(x + width / 2, y + posY, width / 2, 0, pi2);
+                            }
+                        });
+
+                        let text;
+
+                        ctx.fillStyle = "#FA0F41";
+                        text = json[ideograms[i]].meaning.toString();
+                        ctx.font = Math.min(Math.floor(3.5 * width / text.length), 35) + "px arial";
+                        ctx.fillText(text, x + width / 2, y + height + margin / 2 + 15);
+
+                        ctx.fillStyle = "#aaa";
+                        text = ideograms[i].toString();
+                        ctx.font = Math.min(Math.floor(3.5 * width / text.length), 35) + "px arial";
+                        ctx.fillText(text, x + width / 2, y - margin / 2);
+                    }
+                    ctx.stroke();
+                    ctx.closePath();
+                }
+            })(json);
+
+            // Change translation direction
+            switcher.addEventListener("change", function () {
+                localStorage.setItem("switch", this.checked ? 1: 0);
+                onKeyUp(input.value);
+                input.focus();
+            });
+            switcher.checked = +localStorage.getItem("switch");
+
+            function onKeyUp(value) {
+                let words = value.toString().split(/( |\W)/);
+
+                if (switcher.checked) {
+                    let tmp = words;
+                    words = [];
+                    let keys = Object.keys(json);
+                    let keysLength = keys.length;
+                    tmp.forEach(function (word) {
+                        let found;
+                        for (let i = 0; i < keysLength && !found; ++i) {
+                            let meaning = json[keys[i]].meaning;
+                            if (meaning === word || Array.isArray(meaning) && meaning.includes(word)) {
+                                found = keys[i].split(" ");
+                            }
+                        }
+                        words = words.concat(found);
+                    });
+                }
+
+                drawIdeogram(words.filter(function(word) {
+                    return json[word];
+                }));
+            }
+            // Update input
+            input.addEventListener("keyup", function() {
+                onKeyUp(this.value);
+                localStorage.setItem("input", this.value);
+                location.hash = this.value.replace(/ /g, "+");
+            });
+            input.value = (location.hash.length > 1 && location.hash.substr(1).replace(/\+/g, " ")) ||
+                localStorage.getItem("input");
+            onKeyUp(input.value);
+
+            // Clear input
+            document.getElementById("clear").addEventListener("click", function() {
+                input.value = "";
+                localStorage.setItem("input", "");
+                input.focus();
+                drawIdeogram();
+            });
+
+            // Find potential break-down meaning for ideogram (look into console)
+            let regex = new RegExp("(" + Object.keys(json).map(function(phoneme) {
+                return phoneme.replace(/(\W)/g, "\\$1");
+            }).join("|") + ")", "gi");
+            browse(json, function(ideogram) {
+                let brokeDown = ideogram.match(regex);
+
+                // the whole ideogram can be broke down
+                if (brokeDown.length > 1 && ideogram.replace(regex, "") === "") {
+
+                    console.log(toString(ideogram) + " can also mean " + brokeDown.map(function(part) {
+                        return toString(part);
+                    }).join(" "));
+
+                    json[ideogram].breakDown = brokeDown.map(function(part) {
+                        return json[part];
+                    });
+                }
+            });
+        })
+    })();
+</script>
+<!--
+Some criticism (those are my opinions and in no way facts
+
+- Ideogram composed only of one sound (a, t, i ...) kind of break things :
+"a" (alone) + "fia" (paper) => "afia" (book)
+"a" (alone) + "tho" (animal) => "atho" (food) this one is hilarious
+
+- "ki" (me) + nga (awake) => kinga (fix) ?
+- "ki" (me) + ka (you) => kika (process) ?
+
+- Some ideogram should be a combination of two (so they shouldn't be in the alphabet)
+"devit" (left arm) should be "de" (left) "vit" (arm) for example
+
+- Some ideogram are a combination of two but for no reason
+"amyade" (year) is written "mya" (jour) + "dye" (night)
+
+
+- Some ideograms look alike but don't mean the same at all :
+"mu" (object) and "misk" (art)
+
+
+- "amar" (family) is composed of "koga" (mother) + "kago" (father) + "kige" (sibling)
+
+- Their's a lot of inverted V
+
+- Their's no plural or tenses ?
+
+-->
+</body>
+</html>

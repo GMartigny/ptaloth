@@ -1,0 +1,1005 @@
+{
+    "nai": {
+        "meaning": "first",
+        "draw": ["top", [5, 8]]
+    },
+    "dok": {
+        "meaning": "repeat",
+        "draw": [[1, 3, 9], [6, 4, 7], [5, 8]]
+    },
+    "tel": {
+        "meaning": "manifest",
+        "draw": [[1, 3], "bottom"]
+    },
+    "ewa": {
+        "meaning": ["air", "gas"],
+        "draw": [[2, 5], [4, 8]]
+    },
+    "ena": {
+        "meaning": "liquid",
+        "draw": ["top", [4, 8]]
+    },
+    "eda": {
+        "meaning": "solid",
+        "draw": [[4, 6, 3, 1, 4, 8]]
+    },
+    "gai": {
+        "meaning": "last",
+        "draw": [[2, 5], "bottom"]
+    },
+    "teo": {
+        "meaning": "time",
+        "draw": [[7, 3, 1, 9]]
+    },
+    "pen": {
+        "meaning": "space",
+        "draw": ["top", [7, 5, 9]]
+    },
+    "vai": {
+        "meaning": "random",
+        "draw": [[7, 1, 3, 9], [4, 6]]
+    },
+    "g": {
+        "meaning": "infinity",
+        "draw": ["top", "bottom"]
+    },
+    "kra": {
+        "meaning": "entropy",
+        "draw": [[4, 3, 1, 6, 7]]
+    },
+    "obar": {
+        "meaning": "force",
+        "draw": [[1, 3], [2, 5], "bottom"]
+    },
+    "ozar": {
+        "meaning": "energy",
+        "draw": [[3, 1, 7], [4, 6], [2, 5]]
+    },
+
+    "aka": {
+        "meaning": "your",
+        "draw": ["top", [2, 8]]
+    },
+    "sota": {
+        "meaning": "apart",
+        "draw": [[2, 8]]
+    },
+    "a": {
+        "meaning": "alone",
+        "draw": ["top"]
+    },
+    "denm": {
+        "meaning": "location",
+        "draw": [[5, 1, 3, 5, 8]]
+    },
+    "pel": {
+        "meaning": "together",
+        "draw": [[2, 8], [1, 3], [4, 6]]
+    },
+    "taso": {
+        "meaning": "between",
+        "draw": [[1, 4], [3, 6], "bottom"]
+    },
+    "ka": {
+        "meaning": "you",
+        "draw": [[2, 8], "bottom"]
+    },
+    "dero": {
+        "meaning": "left",
+        "draw": [[1, 3, 6, 4, 7]]
+    },
+    "rode": {
+        "meaning": "right",
+        "draw": [[3, 1, 4, 6, 9]]
+    },
+    "nagi": {
+        "meaning": "up",
+        "draw": [[2, 5], [7, 5, 9]]
+    },
+    "gina": {
+        "meaning": "down",
+        "draw": [[1, 5, 3], [5, 8]]
+    },
+    "dak": {
+        "meaning": "weapon",
+        "draw": [[1, 4, 6, 3], [2, 8]]
+    },
+    "kad": {
+        "meaning": "tool",
+        "draw": [[2, 8], [7, 4, 6, 9]]
+    },
+    "sna": {
+        "meaning": "color",
+        "draw": [[1, 9, 3, 1, 7, 3]]
+    },
+
+    "ki": {
+        "meaning": ["I", "me"],
+        "draw": [[7, 1, 3, 9], [5, 8]]
+    },
+    "ngi": {
+        "meaning": ["ou", "we", "us"],
+        "draw": [[1, 3, 4, 6, 7]]
+    },
+    "yu": {
+        "meaning": "understand",
+        "draw": [[1, 3], [2, 8], "bottom"]
+    },
+    "ako": {
+        "meaning": "their",
+        "draw": ["top", [2, 5], [7, 5, 9]]
+    },
+    "mu": {
+        "meaning": "object",
+        "draw": [[6, 7, 1, 3, 9]]
+    },
+    "voi": {
+        "meaning": "fact",
+        "draw": [[1, 7], [4, 6], [3, 9]]
+    },
+    "keso": {
+        "meaning": "anticlockwise",
+        "draw": [[4, 1, 3, 6, 5, 8]]
+    },
+    "kesa": {
+        "meaning": "clockwise",
+        "draw": [[6, 3, 1, 4, 5, 8]]
+    },
+    "!": {
+        "meaning": "!",
+        "draw": [[1, 4], [6, 7]]
+    },
+    "?": {
+        "meaning": "?",
+        "draw": [[1, 3], [6, 7]]
+    },
+    "?!": {
+        "meaning": "?!",
+        "draw": [[3, 1, 4], [6, 7]]
+    },
+    "kuo": {
+        "meaning": "what",
+        "draw": [[1, 3], [2, 5], [7, 4, 6, 9]]
+    },
+    "asik": {
+        "meaning": "open",
+        "draw": [[1, 5, 3], [4, 6], [5, 8]]
+    },
+    "anak": {
+        "meaning": "close",
+        "draw": [[2, 5], [4, 6], [7, 5, 9]]
+    },
+
+    "go": {
+        "meaning": "this",
+        "draw": [[1, 4], [2, 8], [3, 6]]
+    },
+    "so": {
+        "meaning": "that",
+        "draw": [[4, 7], [2, 8], [6, 9]]
+    },
+    "nel": {
+        "meaning": "is",
+        "draw": [[3, 2, 5], "bottom"]
+    },
+    "len": {
+        "meaning": "was",
+        "draw": [[1, 2, 5], "bottom"]
+    },
+    "dai": {
+        "meaning": "join",
+        "draw": [[3, 4, 7], [4, 9]]
+    },
+    "mai": {
+        "meaning": "separate",
+        "draw": [[3, 6, 7], [1, 6]]
+    },
+    "ekta": {
+        "meaning": "width",
+        "draw": [[1, 3], [7, 4, 6, 9]]
+    },
+    "ekto": {
+        "meaning": "height",
+        "draw": [[2, 5], [7, 4, 6, 9]]
+    },
+    "kilu": {
+        "meaning": "switch",
+        "draw": [[1, 4, 6, 9]]
+    },
+    "keka": {
+        "meaning": "creature",
+        "draw": [[1, 7], [2, 8], [3, 9], [4, 6]]
+    },
+    "fen": {
+        "meaning": "emotion",
+        "draw": ["top", [5, 8], [4, 8, 6]]
+    },
+    "fop": {
+        "meaning": "comfort",
+        "draw": [[1, 3, 9, 4, 7]]
+    },
+    "yo": {
+        "meaning": ["am", "are"],
+        "draw": [[1, 5, 3], "bottom"]
+    },
+    "lona": {
+        "meaning": "body",
+        "draw": [[1, 3], [4, 6], [2, 5], [7, 5, 9]]
+    },
+
+    "dal": {
+        "meaning": "start",
+        "draw": [[1, 3, 5, 8]]
+    },
+    "lad": {
+        "meaning": "end",
+        "draw": [[2, 5, 7, 9]]
+    },
+    "t": {
+        "meaning": "to",
+        "draw": [[3, 2, 8, 9], [4, 6]]
+    },
+    "oosa": {
+        "meaning": "bad",
+        "draw": [[1, 3, 6, 4, 1], [5, 8]]
+    },
+    "aamo": {
+        "meaning": "good",
+        "draw": [[2, 5], [4, 6, 9, 7, 4]]
+    },
+    "egd": {
+        "meaning": "in",
+        "draw": [[1, 3, 5, 1], [7, 4, 6, 9]]
+    },
+    "akd": {
+        "meaning": "out",
+        "draw": [[1, 3, 6, 4, 1], [4, 8, 6]]
+    },
+    "aki": {
+        "meaning": "my",
+        "draw": [[7, 1, 3, 9], [2, 8]]
+    },
+    "newa": {
+        "meaning": "mind",
+        "draw": [[1, 3], "top", [2, 5], [7, 5, 9]]
+    },
+    "kal": {
+        "meaning": "somewhere",
+        "draw": [[1, 3, 4, 9]]
+    },
+    "ksan": {
+        "meaning": "dead",
+        "draw": [[1, 9], [3, 7]]
+    },
+    "bsel": {
+        "meaning": "alive",
+        "draw": [[2, 6, 8, 4, 2]]
+    },
+    "kan": {
+        "meaning": "wrong",
+        "draw": [[1, 6], [3, 4], [5, 8]]
+    },
+    "bel": {
+        "meaning": "correct",
+        "draw": [[4, 2, 6], [5, 8]]
+    },
+
+    "pta": {
+        "meaning": "ultimate",
+        "draw": [[6, 2, 4, 9]]
+    },
+    "loth": {
+        "meaning": "language",
+        "draw": [[3, 1, 4, 6, 7]]
+    },
+    "lon": {
+        "meaning": "being",
+        "draw": [[1, 3], [2, 5], [7, 5, 9]]
+    },
+    "tho": {
+        "meaning": "animal",
+        "draw": [[7, 4, 6, 9], [5, 8]]
+    },
+    "sma": {
+        "meaning": "building",
+        "draw": [[7, 4, 2, 6, 9]]
+    },
+    "iiosa": {
+        "meaning": "corrupt",
+        "draw": [[1, 3, 6, 4, 1], [2, 8], [7, 5, 9]]
+    },
+    "atho": {
+        "meaning": "meat",
+        "draw": [[1, 3], [7, 4, 6, 9], [5, 8]]
+    },
+    "gatho": {
+        "meaning": "food",
+        "draw": [[1, 3], [2, 8], [7, 4, 6, 9]]
+    },
+    "gao": {
+        "meaning": "plant",
+        "draw": [[2, 8], [4, 6]]
+    },
+    "nose": {
+        "meaning": "sit",
+        "draw": [[1, 7], [4, 6, 9]]
+    },
+    "sano": {
+        "meaning": "stand",
+        "draw": [[1, 4, 6], [3, 9]]
+    },
+    "wogao": {
+        "meaning": "tree",
+        "draw": [[4, 1, 3, 6], [2, 8]]
+    },
+    "nakena": {
+        "meaning": "ocean",
+        "draw": ["top", [2, 5], [4, 8]]
+    },
+    "nodeda": {
+        "meaning": "land",
+        "draw": [[1, 3, 6, 4, 1], [2, 5], [4, 8]]
+    },
+
+    "thoena": {
+        "meaning": "fish",
+        "draw": ["top", [2, 8], [7, 4, 6, 9]]
+    },
+    "thoeda": {
+        "meaning": "land animal",
+        "draw": [[4, 1, 3, 6], [2, 8], [7, 4, 6, 9]]
+    },
+    "di": {
+        "meaning": "on",
+        "draw": [[3, 1, 5], "bottom"]
+    },
+    "dô": {
+        "meaning": "off",
+        "draw": ["top", [5, 9, 7]]
+    },
+    "min": {
+        "meaning": "better",
+        "draw": [[1, 7], [4, 6]]
+    },
+    "nom": {
+        "meaning": "worse",
+        "draw": [[4, 6], [3, 9]]
+    },
+    "ii": {
+        "meaning": "dark",
+        "draw": [[4, 1, 5, 3, 6], [5, 8]]
+    },
+    "aa": {
+        "meaning": "light",
+        "draw": [[2, 5], [4, 7, 5, 9, 6]]
+    },
+    "apel": {
+        "meaning": "take",
+        "draw": [[1, 3], [2, 8], [6, 4, 7]]
+    },
+    "nipel": {
+        "meaning": "give",
+        "draw": [[1, 3], [2, 8], [6, 4, 1]]
+    },
+    "pela": {
+        "meaning": "steal",
+        "draw": [[1, 3], [2, 8], [4, 6, 9]]
+    },
+    "pelni": {
+        "meaning": "buy",
+        "draw": [[1, 3], [2, 8], [4, 6, 3]]
+    },
+    "adal": {
+        "meaning": ["go", "move"],
+        "draw": [[1, 3, 5, 8], [4, 6]]
+    },
+    "alad": {
+        "meaning": "stop",
+        "draw": [[2, 5, 7, 9], [4, 6]]
+    },
+
+    "ja": {
+        "meaning": "male",
+        "draw": [[1, 3, 9]]
+    },
+    "je": {
+        "meaning": "other",
+        "draw": [[1, 3], [2, 8]]
+    },
+    "ji": {
+        "meaning": "female",
+        "draw": [[3, 1, 7]]
+    },
+    "uong": {
+        "meaning": "sleep",
+        "draw": [[1, 5, 3], [5, 8], [4, 8, 6]]
+    },
+    "nga": {
+        "meaning": "awake",
+        "draw": [[4, 2, 6], [2, 5], [7, 5, 9]]
+    },
+    "rovit": {
+        "meaning": "right arm",
+        "draw": [[1, 2, 5], [7, 5, 9]]
+    },
+    "devit": {
+        "meaning": "left arm",
+        "draw": [[3, 2, 5], [7, 5, 9]]
+    },
+    "vong": {
+        "meaning": "torso",
+        "draw": [[1, 3], [7, 5, 9]]
+    },
+    "roten": {
+        "meaning": "right leg",
+        "draw": [[1, 3], [2, 5, 7]]
+    },
+    "deten": {
+        "meaning": "left leg",
+        "draw": [[1, 3], [2, 5, 9]]
+    },
+    "boi": {
+        "meaning": "head",
+        "draw": [[1, 3], "top", [7, 5, 9]]
+    },
+    "wera": {
+        "meaning": "jump",
+        "draw": [[1, 3], [2, 5], [4, 6]]
+    },
+    "weki": {
+        "meaning": ["spin", "turn"],
+        "draw": [[4, 2, 6], [2, 8], [7, 5, 9]]
+    },
+    "nelon": {
+        "meaning": "assist",
+        "draw": [[1, 3], [2, 8], [7, 5, 9]]
+    },
+
+    "chika": {
+        "meaning": "picture",
+        "draw": [[3, 1, 4, 6], [7, 5, 9]]
+    },
+    "chimo": {
+        "meaning": "video",
+        "draw": [[1, 3, 6, 4], [2, 5], [7, 5, 9]]
+    },
+    "kak": {
+        "meaning": "danger",
+        "draw": [[1, 5, 3], [2, 8]]
+    },
+    "tot": {
+        "meaning": "safety",
+        "draw": [[2, 8], [7, 5, 9]]
+    },
+    "fia": {
+        "meaning": "paper",
+        "draw": [[1, 4, 6]]
+    },
+    "afia": {
+        "meaning": "book",
+        "draw": [[1, 4, 6], [4, 3]]
+    },
+    "ofia": {
+        "meaning": "tome",
+        "draw": [[1, 4, 6], [4, 3], [4, 2]]
+    },
+    "egno": {
+        "meaning": "entrance",
+        "draw": [[1, 3, 5, 1], [2, 8], [7, 4, 6, 9]]
+    },
+    "akno": {
+        "meaning": "exit",
+        "draw": [[1, 3, 6, 4, 1], [2, 8], [4, 8, 6]]
+    },
+    "mya": {
+        "meaning": "day",
+        "draw": ["top", [4, 3]]
+    },
+    "dye": {
+        "meaning": "night",
+        "draw": ["bottom", [4, 9]]
+    },
+    "amya": {
+        "meaning": "midday",
+        "draw": ["top", [4, 3], [2, 8]]
+    },
+    "adye": {
+        "meaning": "midnight",
+        "draw": ["bottom", [4, 9], [2, 8]]
+    },
+    "amyade": {
+        "meaning": "year",
+        "draw": ["top", [4, 3], "bottom", [4, 9]]
+    },
+
+    "anewat": {
+        "meaning": "think",
+        "draw": [[1, 3], "top", [2, 8], [7, 5, 9]]
+    },
+    "kika": {
+        "meaning": "process",
+        "draw": [[3, 1, 7], [8, 5, 6, 9]]
+    },
+    "tol": {
+        "meaning": "device",
+        "draw": [[8, 2, 1, 4, 6, 9]]
+    },
+    "bre": {
+        "meaning": "vehicule",
+        "draw": [[4, 6, 3, 2, 8, 7, 4]]
+    },
+    "siye": {
+        "meaning": "fast",
+        "draw": [[1, 3], [4, 2, 6], [2, 8]]
+    },
+    "yesi": {
+        "meaning": "slow",
+        "draw": [[4, 2, 6, 4], [2, 8]]
+    },
+    "uwa": {
+        "meaning": ["tall", "long"],
+        "draw": [[7, 4, 5], [8, 2, 3, 9]]
+    },
+    "iya": {
+        "meaning": "short",
+        "draw": [[7, 1, 2, 8], [5, 6, 9]]
+    },
+    "wo": {
+        "meaning": "big",
+        "draw": [[1, 7, 3]]
+    },
+    "ne": {
+        "meaning": "small",
+        "draw": [[7, 1, 9]]
+    },
+    "weno": {
+        "meaning": "medium",
+        "draw": [[9, 1, 7, 3]]
+    },
+    "nowe": {
+        "meaning": "average",
+        "draw": [[9, 1, 7, 3], [4, 6]]
+    },
+    "awo": {
+        "meaning": "huge",
+        "draw": [[1, 7, 3], [8, 6]]
+    },
+    "ane": {
+        "meaning": "tiny",
+        "draw": [[7, 1, 9], [2 ,6]]
+    },
+
+    "nye": {
+        "meaning": "no",
+        "draw": [[1, 7, 5, 9]]
+    },
+    "do": {
+        "meaning": "yes",
+        "draw": [[1, 5, 3, 9]]
+    },
+    "depo": {
+        "meaning": "maybe",
+        "draw": [[3, 1, 6, 4, 7]]
+    },
+    "asia": {
+        "meaning": ["sphere", "ball"],
+        "draw": ["top", [5, 8], [4, 7], [6, 9]]
+    },
+    "akad": {
+        "meaning": ["cube", "box"],
+        "draw": [[1, 3, 6, 4, 1], [5, 8], [4, 7], [6, 9]]
+    },
+    "sia": {
+        "meaning": "circle",
+        "draw": ["top", [5, 8], [6, 9]]
+    },
+    "kod": {
+        "meaning": "square",
+        "draw": [[1, 3, 6, 4, 1], [5, 8], [6, 9]]
+    },
+    "aad": {
+        "meaning": "vegetable",
+        "draw": ["top", [5, 8], [7, 5, 9]]
+    },
+    "oob": {
+        "meaning": "fruit",
+        "draw": [[1, 5, 3], [2, 5], "bottom"]
+    },
+    "hen": {
+        "meaning": "sound",
+        "draw": [[1, 5, 3], [4, 8, 6]]
+    },
+    "hana": {
+        "meaning": "music",
+        "draw": [[4, 2, 6, 8, 4], [7, 5, 9]]
+    },
+    "misk": {
+        "meaning": ["art", "paint"],
+        "draw": [[1, 9, 3, 1, 7, 6]]
+    },
+    "amisko": {
+        "meaning": "game",
+        "draw": [[1, 9, 3, 1, 7, 6], [2, 8]]
+    },
+    "twef": {
+        "meaning": ["star", "bright"],
+        "draw": [[2, 5], [4, 6], [7, 5, 9]]
+    },
+
+    "kao": {
+        "meaning": "why",
+        "draw": [[1, 3, 4], [7, 4, 6, 9]]
+    },
+    "kio": {
+        "meaning": "how",
+        "draw": [[3, 1, 6], [2, 5], [7, 4, 6, 9]]
+    },
+    "mivat": {
+        "meaning": "never",
+        "draw": ["top", [4, 8, 6], [3, 9]]
+    },
+    "diredim": {
+        "meaning": "meme",
+        "draw": [[4, 1, 2, 5, 7], [5, 6], [3, 6, 8]]
+    },
+    "sha": {
+        "meaning": "material",
+        "draw": [[7, 4, 8, 5, 1 ,3, 9]]
+    },
+    "uan": {
+        "meaning": "wear",
+        "draw": [[7, 3, 1 ,9], [2, 5], [4, 6]]
+    },
+    "bol": {
+        "meaning": "system",
+        "draw": [[1, 4], [2, 5], [3, 6, 7]]
+    },
+    "d": {
+        "meaning": "age",
+        "draw": [[3, 1, 7, 8, 5, 6]]
+    },
+    "anema": {
+        "meaning": "lake",
+        "draw": ["top", [2, 8, 4]]
+    },
+    "anome": {
+        "meaning": "hill",
+        "draw": [[1, 3, 6, 4, 1], [2, 8, 4]]
+    },
+    "shlo": {
+        "meaning": "drink",
+        "draw": ["top", [4, 8, 6]]
+    },
+    "kvar": {
+        "meaning": "fire",
+        "draw": [[3, 1, 7 ,5, 8, 6, 9]]
+    },
+    "sni": {
+        "meaning": "ice",
+        "draw": ["top", [3, 4, 8]]
+    },
+    "rai": {
+        "meaning": "element",
+        "draw": [[4, 8]]
+    },
+
+    "z": {
+        "meaning": "temperature",
+        "draw": [[7, 1, 2, 8]]
+    },
+    "zel": {
+        "meaning": "freezing",
+        "draw": [[7, 1, 2, 8, 9]]
+    },
+    "zal": {
+        "meaning": "cold",
+        "draw": [[7, 1, 2, 8, 9], [5, 6]]
+    },
+    "zem": {
+        "meaning": ["warm", "tepid"],
+        "draw": [[7, 1, 2, 8], [5, 6]]
+    },
+    "zan": {
+        "meaning": "hot",
+        "draw": [[7, 1, 2, 8], [2, 3], [5, 6]]
+    },
+    "zek": {
+        "meaning": "boiling",
+        "draw": [[7, 1, 2, 8], [2, 3]]
+    },
+    "farok": {
+        "meaning": "important",
+        "draw": [[1, 4, 8, 7], [3, 6]]
+    },
+    "gakin": {
+        "meaning": "break",
+        "draw": [[7, 1, 3, 5, 9]]
+    },
+    "kinga": {
+        "meaning": "fix",
+        "draw": [[3, 1, 5, 7], [5 ,6, 9]]
+    },
+    "mode": {
+        "meaning": "new",
+        "draw": [[1, 3], [2, 8], [4, 7], [6, 9]]
+    },
+    "demo": {
+        "meaning": "ancient",
+        "draw": [[7, 6, 1, 3, 4 ,9]]
+    },
+    "vwo": {
+        "meaning": "grow",
+        "draw": [[1, 6], [3, 4, 9]]
+    },
+    "giba": {
+        "meaning": "toy",
+        "draw": [[1, 3, 5, 1], "bottom"]
+    },
+    "nesete": {
+        "meaning": "meaning",
+        "draw": [[3, 1, 6, 8], [4 ,6]]
+    },
+
+    "na": {
+        "meaning": "subtle action",
+        "draw": [[4, 6], [5, 8]]
+    },
+    "ko": {
+        "meaning": "strong action",
+        "draw": [[4, 6, 8]]
+    },
+    "yin": {
+        "meaning": "eye",
+        "draw": [[1 ,5, 3], [2, 5]]
+    },
+    "ben": {
+        "meaning": "nose",
+        "draw": [[2, 4, 6]]
+    },
+    "gan": {
+        "meaning": "mouth",
+        "draw": [1, 3, 6, 4]
+    },
+    "ton": {
+        "meaning": "hand",
+        "draw": [[1, 3], [4, 2, 6]]
+    },
+    "rin": {
+        "meaning": "ear",
+        "draw": [[1, 3, 4, 6]]
+    },
+    "ten": {
+        "meaning": "foot",
+        "draw": [[1, 4, 3, 6]]
+    },
+    "re": {
+        "meaning": "few",
+        "draw": [[7, 4, 6], [5, 8]]
+    },
+    "ream": {
+        "meaning": ["amount", "some"],
+        "draw": [[7, 4, 6, 9]]
+    },
+    "am": {
+        "meaning": "many",
+        "draw": [[4, 6, 9], [5, 8]]
+    },
+    "tom": {
+        "meaning": "shape",
+        "draw": [[6, 4, 1, 3, 9]]
+    },
+    "fam": {
+        "meaning": "form",
+        "draw": ["top", [6, 9]]
+    },
+    "aknos": {
+        "meaning": "dimension",
+        "draw": [[1, 4, 5, 2, 3, 6], [7, 5, 9]]
+    },
+
+    "du": {
+        "meaning": "input",
+        "draw": [[1, 6, 7], [4, 6]]
+    },
+    "de": {
+        "meaning": "output",
+        "draw": [[3, 4, 9], [4, 6]]
+    },
+    "shke": {
+        "meaning": "cut",
+        "draw": [[7, 1, 6, 3]]
+    },
+    "husa": {
+        "meaning": "throw",
+        "draw": [[2, 4, 8], [3, 5]]
+    },
+    "aksan": {
+        "meaning": "kill",
+        "draw": [[1, 9], [3, 7], [4, 6]]
+    },
+    "absel": {
+        "meaning": "born",
+        "draw": [[2, 4, 8, 6, 2], [4, 6]]
+    },
+    "ona": {
+        "meaning": "backward",
+        "draw": [[1, 6, 7]]
+    },
+    "ogi": {
+        "meaning": "forward",
+        "draw": [[3, 4, 9]]
+    },
+    "nea": {
+        "meaning": "beyond",
+        "draw": [[4, 2, 6], [1, 9], [3, 7]]
+    },
+    "atron": {
+        "meaning": ["have", "called"],
+        "draw": [[4, 1, 3, 6], [7, 5, 9]]
+    },
+    "koga": {
+        "meaning": "mother",
+        "draw": [[1, 3], [2, 5], [7, 5, 9], [4, 8, 6]]
+    },
+    "kago": {
+        "meaning": "father",
+        "draw": [[1, 3], [2, 5], [7, 5, 9], [4, 6, 8]]
+    },
+    "amar": {
+        "meaning": ["family", "heart"],
+        "draw": [[1, 3], [2, 5], [7, 5, 9], [4, 6, 8, 4]]
+    },
+    "kige": {
+        "meaning": "sibling",
+        "draw": [[1, 3], [2, 5], [7, 5, 9], [6, 4, 8]]
+    },
+
+    ".": {
+        "meaning": ".",
+        "draw": [[7]]
+    },
+    "i": {
+        "meaning": ",",
+        "draw": [[7, 4, 8]]
+    },
+    "issi": {
+        "meaning": "or",
+        "draw": [[1, 4, 6, 3]]
+    },
+    "olla": {
+        "meaning": "and",
+        "draw": [[4, 2, 6]]
+    },
+    "uba": {
+        "meaning": ">",
+        "draw": [[1, 7], [4, 5]]
+    },
+    "abu": {
+        "meaning": "<",
+        "draw": [[4, 5], [2, 8]]
+    },
+    "slan": {
+        "meaning": "add",
+        "draw": [[1, 4, 5]]
+    },
+    "evek": {
+        "meaning": "multiply",
+        "draw": [[4, 1, 2, 5]]
+    },
+    "nass": {
+        "meaning": "substract",
+        "draw": [[5, 4, 7]]
+    },
+    "keva": {
+        "meaning": "divide",
+        "draw": [[4, 7, 8, 5]]
+    },
+    "esito": {
+        "meaning": "equals",
+        "draw": [[4, 5, 7]]
+    },
+    "(": {
+        "meaning": "(",
+        "draw": [[2, 1, 7]]
+    },
+    ")": {
+        "meaning": ")",
+        "draw": [[7, 8, 2]]
+    },
+    "dan": {
+        "meaning": ["invert", "not"],
+        "draw": [[2, 1, 7, 8]]
+    },
+
+    "or": {
+        "meaning": "0",
+        "draw": ["top", [7, 9]]
+    },
+    "an": {
+        "meaning": "1",
+        "draw": [[5, 8], [7, 9]]
+    },
+    "id": {
+        "meaning": "2",
+        "draw": [[2, 5], [7, 9]]
+    },
+    "un": {
+        "meaning": "3",
+        "draw": [[2, 8], [7, 9]]
+    },
+    "et": {
+        "meaning": "4",
+        "draw": [[4, 6], [7, 9]]
+    },
+    "ar": {
+        "meaning": "5",
+        "draw": [[4, 6], [5, 8], [7, 9]]
+    },
+    "en": {
+        "meaning": "6",
+        "draw": [[2, 5], [4, 6], [7, 9]]
+    },
+    "iz": {
+        "meaning": "7",
+        "draw": [[2, 8], [4, 6], [7, 9]]
+    },
+    "ot": {
+        "meaning": "8",
+        "draw": [[1, 3], [7, 9]]
+    },
+    "ek": {
+        "meaning": "9",
+        "draw": [[1, 3], [5, 8], [7, 9]]
+    },
+    "er": {
+        "meaning": "10",
+        "draw": [[1, 3], [2, 5], [7, 9]]
+    },
+    "ok": {
+        "meaning": "11",
+        "draw": [[1, 3], [2, 8], [7, 9]]
+    },
+    "at": {
+        "meaning": "12",
+        "draw": [[1, 3], [4, 6], [7, 9]]
+    },
+    "ed": {
+        "meaning": "13",
+        "draw": [[1, 3], [4, 6], [5, 8], [7, 9]]
+    },
+    "it": {
+        "meaning": "14",
+        "draw": [[1, 3], [2, 5], [4, 6], [7, 9]]
+    },
+    "ak": {
+        "meaning": "15",
+        "draw": [[1, 3], [2, 8], [4, 6], [7, 9]]
+    },
+    "kal pel": {
+        "meaning": "hello"
+    },
+    "pel mai": {
+        "meaning": "bye"
+    },
+    "aamo fen": {
+        "meaning": "thank"
+    },
+    "nose mu": {
+        "meaning": "seat"
+    },
+    "kika tol": {
+        "meaning": "computer"
+    },
+    "aki kan": {
+        "meaning": "sorry"
+    },
+    "nipel nelon": {
+        "meaning": "help"
+    },
+    "na yin": {
+        "meaning": "excuse"
+    },
+    "ream pelni": {
+        "meaning": "cost"
+    }
+}
