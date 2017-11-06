@@ -118,7 +118,7 @@
         "draw": [[7, 1, 3, 9], [5, 8]]
     },
     "ngi": {
-        "meaning": ["ou", "we", "us"],
+        "meaning": ["we", "us", "our"],
         "draw": [[1, 3, 4, 6, 7]]
     },
     "yu": {
@@ -180,6 +180,7 @@
     },
     "nel": {
         "meaning": "is",
+        "synonyms": ["'s"],
         "draw": [[3, 2, 5], "bottom"]
     },
     "len": {
@@ -220,6 +221,7 @@
     },
     "yo": {
         "meaning": ["am", "are"],
+        "synonyms": ["'m", "'re"],
         "draw": [[1, 5, 3], "bottom"]
     },
     "lona": {
@@ -839,10 +841,12 @@
     },
     "koga": {
         "meaning": "mother",
+        "synonyms": ["mom", "mommy"],
         "draw": [[1, 3], [2, 5], [7, 5, 9], [4, 8, 6]]
     },
     "kago": {
         "meaning": "father",
+        "synonyms": ["dad", "daddy"],
         "draw": [[1, 3], [2, 5], [7, 5, 9], [4, 6, 8]]
     },
     "amar": {
@@ -913,70 +917,86 @@
 
     "or": {
         "meaning": "0",
+        "synonyms": ["zero"],
         "draw": ["top", [7, 9]]
     },
     "an": {
         "meaning": "1",
+        "synonyms": ["one"],
         "draw": [[5, 8], [7, 9]]
     },
     "id": {
         "meaning": "2",
+        "synonyms": ["two"],
         "draw": [[2, 5], [7, 9]]
     },
     "un": {
         "meaning": "3",
+        "synonyms": ["three"],
         "draw": [[2, 8], [7, 9]]
     },
     "et": {
         "meaning": "4",
+        "synonyms": ["four"],
         "draw": [[4, 6], [7, 9]]
     },
     "ar": {
         "meaning": "5",
+        "synonyms": ["five"],
         "draw": [[4, 6], [5, 8], [7, 9]]
     },
     "en": {
         "meaning": "6",
+        "synonyms": ["six"],
         "draw": [[2, 5], [4, 6], [7, 9]]
     },
     "iz": {
         "meaning": "7",
+        "synonyms": ["seven"],
         "draw": [[2, 8], [4, 6], [7, 9]]
     },
     "ot": {
         "meaning": "8",
+        "synonyms": ["eight"],
         "draw": [[1, 3], [7, 9]]
     },
     "ek": {
         "meaning": "9",
+        "synonyms": ["nine"],
         "draw": [[1, 3], [5, 8], [7, 9]]
     },
     "er": {
         "meaning": "10",
+        "synonyms": ["ten"],
         "draw": [[1, 3], [2, 5], [7, 9]]
     },
     "ok": {
         "meaning": "11",
+        "synonyms": ["eleven"],
         "draw": [[1, 3], [2, 8], [7, 9]]
     },
     "at": {
         "meaning": "12",
+        "synonyms": ["twelve"],
         "draw": [[1, 3], [4, 6], [7, 9]]
     },
     "ed": {
         "meaning": "13",
+        "synonyms": ["thirteen"],
         "draw": [[1, 3], [4, 6], [5, 8], [7, 9]]
     },
     "it": {
         "meaning": "14",
+        "synonyms": ["fourteen"],
         "draw": [[1, 3], [2, 5], [4, 6], [7, 9]]
     },
     "ak": {
         "meaning": "15",
+        "synonyms": ["fifteen"],
         "draw": [[1, 3], [2, 8], [4, 6], [7, 9]]
     },
     "kal pel": {
-        "meaning": "hello"
+        "meaning": ["hello", "hi"]
     },
     "pel mai": {
         "meaning": "bye"
@@ -985,7 +1005,7 @@
         "meaning": "thank"
     },
     "nose mu": {
-        "meaning": "seat"
+        "meaning": ["seat", "chair"]
     },
     "kika tol": {
         "meaning": "computer"
@@ -1000,6 +1020,6 @@
         "meaning": "excuse"
     },
     "ream pelni": {
-        "meaning": "cost"
+        "meaning": ["cost", "price"]
     }
 }
