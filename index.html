@@ -11,18 +11,46 @@
         main {
             margin-top: 20px;
         }
+        main .custom-checkbox {
+            padding-left: .25rem;
+        }
         #switch {
+            position: relative;
+            top: -2px;
             -webkit-appearance: none;
-            width: 1em;
+            -moz-appearance: none;
+            appearance: none;
+            height: 0;
             outline: none;
-            margin: 0 .3em;
+        }
+        #switch:before, #switch:after {
+            position: absolute;
+            top: -2px;
+            cursor: pointer;
+            text-align: center;
+            padding: 0 1em;
+            border-radius: inherit;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border: inherit;
+        }
+        #switch:before {
+            content: "Ptaloth";
+            color: #333;
         }
         #switch:after {
-            content: "\f061";
-            font-family: FontAwesome;
+            content: "English";
+            color: inherit;
+            background-color: inherit;
+            overflow: hidden;
+            height: 0;
+            transition: height .3s ease-out;
         }
         #switch:checked:after {
-            content: "\f060";
+            height: calc(1.5em + 1px);
+        }
+        .btn.btn-secondary:active {
+            box-shadow: none !important;
         }
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -36,20 +64,21 @@
         <div class="input-group">
             <input type="text" class="form-control" id="input" placeholder="Enter text"/>
             <span class="input-group-btn">
-            <button id="clear" class="btn btn-secondary" type="button"><i class="fa fa-remove" aria-hidden="true"></i></button>
-        </span>
+                <button id="clear" class="btn btn-secondary" type="button" title="Clear input">
+                    <i class="fa fa-remove" aria-hidden="true"></i>
+                </button>
+            </span>
         </div>
         <div class="input-group">
-            <label class="custom-control custom-checkbox" for="switch">
-                <span>Ptaloth</span>
-                <input type="checkbox" id="switch">
-                <span>English</span>
+            <label class="custom-control custom-checkbox" for="switch" title="Switch language">
+                <input type="checkbox" id="switch" class="btn btn-secondary">
             </label>
         </div>
     </form>
 </main>
 <canvas id="output"></canvas>
 <script>
+    // Nothing of interest can be found in this messy code, look further
     (function() {
         function browse (object, action) {
             for (let key in object) {
@@ -168,13 +197,15 @@
                     if (/ $/.test(input)) {
                         return false;
                     }
-                    return Awesomplete.FILTER_STARTSWITH(text, input.match(/[^ ]*$/)[0]);
+                    else {
+                        return Awesomplete.FILTER_STARTSWITH(text, input.match(/[^ ]*$/)[0]);
+                    }
                 },
                 item: function(text, input) {
                     return Awesomplete.ITEM(text, input.match(/[^ ]*$/)[0]);
                 },
                 replace: function(text) {
-                    var before = this.input.value.match(/^.+ \s*|/)[0];
+                    let before = this.input.value.match(/^.+ \s*|/)[0];
                     this.input.value = before + text + " ";
                 }
             });
@@ -209,7 +240,9 @@
                             if (data.synonyms) {
                                 meaning = meaning.concat(data.synonyms);
                             }
-                            if (meaning.includes(word)) {
+                            if (meaning.some(function (element) {
+                                    return element.toLowerCase() === word;
+                                })) {
                                 found = keys[i].split(" ");
                             }
                         }

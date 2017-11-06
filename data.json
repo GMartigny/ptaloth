@@ -743,11 +743,11 @@
     },
 
     "na": {
-        "meaning": "subtle action",
+        "meaning": "subtle",
         "draw": [[4, 6], [5, 8]]
     },
     "ko": {
-        "meaning": "strong action",
+        "meaning": "strong",
         "draw": [[4, 6, 8]]
     },
     "yin": {
