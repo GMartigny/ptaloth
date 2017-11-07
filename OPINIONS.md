@@ -2,7 +2,7 @@ Maybe, have a look at [Bliss language](http://www.blissymbolics.org/images/bliss
 
 ---
 
-## Some criticism (those are my opinions and in no way facts
+## Some criticisms (those are my opinions and in no way facts)
 
 Some ideogram are composed of others :
 
