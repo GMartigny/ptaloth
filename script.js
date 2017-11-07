@@ -10,16 +10,10 @@
     Array.prototype.toString = function () {
         return this.join(", ")
     };
-    Array.prototype.last = function() {
-        return this[this.length - 1];
-    };
-    String.prototype.last = function() {
-        return Array.prototype.last.call(this);
-    };
 
     /**
      * @typedef {Object} Ideogram
-     * @prop {String|Array} meaning - Meaning of this ideogram (can have two)
+     * @prop {String} meaning - Meaning of this ideogram (can have two)
      * @prop {Array<Array|String>} [draw] - List of instruction for the draw (can be omitted to use only for reference)
      * @prop {Array<String>} [synonyms] - Other meaning for this ideogram
      */
@@ -56,7 +50,7 @@
             return phoneme.replace(/(\W)/g, "\\$1");
         }).join("|") + ")", "gi");
         browse(json, function(ideogram, data) {
-            englishWords = englishWords.concat(data.meaning);
+            englishWords.push(data.meaning);
             if (data.synonyms) {
                 englishWords = englishWords.concat(data.synonyms);
             }
@@ -84,7 +78,7 @@
                 img.title = ideogram;
                 img.src = keyCanvas.toDataURL();
                 img.addEventListener("click", function() {
-                    input.value += (!input.value.length || input.value.last() === " " ? "": " ") + [].concat(switcher.checked ? data.meaning : ideogram)[0] + " ";
+                    input.value += (/ $/.test(input.value) ? "" : " ") + (switcher.checked ? data.meaning : ideogram) + " ";
                     onKeyUp(input.value);
                 });
                 keyboard.appendChild(img);
@@ -132,15 +126,12 @@
             });
 
             if (withText) {
-                let text;
-
                 ctx.fillStyle = "#aaa";
-                text = name.toString();
-                ctx.font = Math.min(Math.floor(3.5 * width / text.length), 35) + "px arial";
-                ctx.fillText(text, x + width / 2, y - 20);
+                ctx.font = Math.min(Math.floor(3.5 * width / name.length), 35) + "px arial";
+                ctx.fillText(name, x + width / 2, y - 20);
 
                 ctx.fillStyle = "#FA0F41";
-                text = ideogram.meaning.toString();
+                let text = ideogram.meaning;
                 ctx.font = Math.min(Math.floor(3.5 * width / text.length), 35) + "px arial";
                 ctx.fillText(text, x + width / 2, y + height + 40);
             }
@@ -163,7 +154,7 @@
              */
             return function(ideograms) {
                 let length = ideograms ? ideograms.length : 0;
-                output.height = Math.ceil(length / nbPerLine) * (height + margin) + margin;
+                output.height = Math.ceil(length / nbPerLine) * (height + margin * 2);
                 ctx.lineWidth = lineWidth;
                 ctx.lineCap = "round";
                 ctx.lineJoin = "round";
@@ -173,7 +164,7 @@
                 ctx.beginPath();
                 for (let i = 0; i < length; ++i) {
                     let x = margin + (width + margin) * (i % nbPerLine);
-                    let y = margin + (height + margin) * Math.floor(i / nbPerLine);
+                    let y = margin + (height + margin * 2) * Math.floor(i / nbPerLine);
 
                     drawIdeogram(ctx, x, y, ideograms[i], width, true);
                 }
@@ -201,7 +192,6 @@
                 this.input.value = before + text + " ";
             }
         });
-        autocomplete.list = switcher.checked ? englishWords : Object.keys(json);
 
         // Change translation direction
         switcher.addEventListener("change", function () {
@@ -214,6 +204,8 @@
         });
         switcher.checked = (location.hash.length > 2 && +location.hash.substr(1, 1)) ||
             +localStorage.getItem("switch");
+
+        autocomplete.list = switcher.checked ? englishWords : Object.keys(json);
 
         function onKeyUp() {
             let value = input.value;
@@ -236,11 +228,11 @@
                     let found;
                     for (let i = 0; i < keysLength && !found; ++i) {
                         let data = json[keys[i]];
-                        let meaning = [].concat(data.meaning);
-                        if (data.synonyms) {
-                            meaning = meaning.concat(data.synonyms);
+                        let meanings = [data.meaning];
+                        if (data.synonyms && data.synonyms.length) {
+                            meanings = meanings.concat(data.synonyms);
                         }
-                        if (meaning.some(function (element) {
+                        if (meanings.some(function (element) {
                                 return element.toLowerCase() === word;
                             })) {
                             found = keys[i].split(" ");

@@ -12,7 +12,8 @@
         "draw": [[1, 3], "bottom"]
     },
     "ewa": {
-        "meaning": ["air", "gas"],
+        "meaning": "air",
+        "synonyms": ["gas"],
         "draw": [[2, 5], [4, 8]]
     },
     "ena": {
@@ -64,7 +65,7 @@
         "meaning": "apart",
         "draw": [[2, 8]]
     },
-    "a": {
+    "hua": {
         "meaning": "alone",
         "draw": ["top"]
     },
@@ -114,11 +115,13 @@
     },
 
     "ki": {
-        "meaning": ["I", "me"],
+        "meaning": "me",
+        "synonyms": ["I"],
         "draw": [[7, 1, 3, 9], [5, 8]]
     },
     "ngi": {
-        "meaning": ["we", "us", "our"],
+        "meaning": "us",
+        "synonyms": ["we", "our"],
         "draw": [[1, 3, 4, 6, 7]]
     },
     "yu": {
@@ -221,8 +224,8 @@
         "draw": [[1, 3, 9, 4, 7]]
     },
     "yo": {
-        "meaning": ["am", "are"],
-        "synonyms": ["'m", "'re"],
+        "meaning": "am",
+        "synonyms": ["'m", "are", "'re"],
         "draw": [[1, 5, 3], "bottom"]
     },
     "lona": {
@@ -394,7 +397,8 @@
         "draw": [[1, 3], [2, 8], [4, 6, 3]]
     },
     "adal": {
-        "meaning": ["go", "move"],
+        "meaning": "go",
+        "synonyms": ["move"],
         "draw": [[1, 3, 5, 8], [4, 6]]
     },
     "alad": {
@@ -451,7 +455,8 @@
         "draw": [[1, 3], [2, 5], [4, 6]]
     },
     "weki": {
-        "meaning": ["spin", "turn"],
+        "meaning": "turn",
+        "synonyms": ["spin"],
         "draw": [[4, 2, 6], [2, 8], [7, 5, 9]]
     },
     "nelon": {
@@ -541,7 +546,8 @@
         "draw": [[4, 2, 6, 4], [2, 8]]
     },
     "uwa": {
-        "meaning": ["tall", "long"],
+        "meaning": "tall",
+        "synonyms": ["long"],
         "draw": [[7, 4, 5], [8, 2, 3, 9]]
     },
     "iya": {
@@ -586,11 +592,13 @@
         "draw": [[3, 1, 6, 4, 7]]
     },
     "asia": {
-        "meaning": ["sphere", "ball"],
+        "meaning": "sphere",
+        "synonyms": ["ball"],
         "draw": ["top", [5, 8], [4, 7], [6, 9]]
     },
     "akad": {
-        "meaning": ["cube", "box"],
+        "meaning": "cube",
+        "synonyms": ["box"],
         "draw": [[1, 3, 6, 4, 1], [5, 8], [4, 7], [6, 9]]
     },
     "sia": {
@@ -618,7 +626,8 @@
         "draw": [[4, 2, 6, 8, 4], [7, 5, 9]]
     },
     "misk": {
-        "meaning": ["art", "paint"],
+        "meaning": "art",
+        "synonyms": ["pain"],
         "draw": [[1, 9, 3, 1, 7, 6]]
     },
     "amisko": {
@@ -626,7 +635,8 @@
         "draw": [[1, 9, 3, 1, 7, 6], [2, 8]]
     },
     "twef": {
-        "meaning": ["star", "bright"],
+        "meaning": "star",
+        "synonyms": ["bright"],
         "draw": [[2, 5], [4, 6], [7, 5, 9]]
     },
 
@@ -701,7 +711,8 @@
         "draw": [[7, 1, 2, 8, 9], [5, 6]]
     },
     "zem": {
-        "meaning": ["warm", "tepid"],
+        "meaning": "warm",
+        "synonyms": ["tepid"],
         "draw": [[7, 1, 2, 8], [5, 6]]
     },
     "zan": {
@@ -782,7 +793,8 @@
         "draw": [[7, 4, 6], [5, 8]]
     },
     "ream": {
-        "meaning": ["amount", "some"],
+        "meaning": "amount",
+        "synonyms": ["some"],
         "draw": [[7, 4, 6, 9]]
     },
     "am": {
@@ -839,7 +851,8 @@
         "draw": [[4, 2, 6], [1, 9], [3, 7]]
     },
     "atron": {
-        "meaning": ["have", "called"],
+        "meaning": "have",
+        "synonyms": ["called"],
         "draw": [[4, 1, 3, 6], [7, 5, 9]]
     },
     "koga": {
@@ -853,7 +866,8 @@
         "draw": [[1, 3], [2, 5], [7, 5, 9], [4, 6, 8]]
     },
     "amar": {
-        "meaning": ["family", "heart"],
+        "meaning": "family",
+        "synonyms": ["heart"],
         "draw": [[1, 3], [2, 5], [7, 5, 9], [4, 6, 8, 4]]
     },
     "kige": {
@@ -914,7 +928,8 @@
         "draw": [[7, 8, 2]]
     },
     "dan": {
-        "meaning": ["invert", "not"],
+        "meaning": "invert",
+        "synonyms": ["not"],
         "draw": [[2, 1, 7, 8]]
     },
 
@@ -999,7 +1014,8 @@
         "draw": [[1, 3], [2, 8], [4, 6], [7, 9]]
     },
     "kal pel": {
-        "meaning": ["hello", "hi"]
+        "meaning": "hello",
+        "synonyms": ["hi"]
     },
     "pel mai": {
         "meaning": "bye"
@@ -1008,7 +1024,8 @@
         "meaning": "thank"
     },
     "nose mu": {
-        "meaning": ["seat", "chair"]
+        "meaning": "seat",
+        "synonyms": ["chair"]
     },
     "kika tol": {
         "meaning": "computer"
@@ -1019,10 +1036,8 @@
     "nipel nelon": {
         "meaning": "help"
     },
-    "na yin": {
-        "meaning": "excuse"
-    },
     "ream pelni": {
-        "meaning": ["cost", "price"]
+        "meaning": "cost",
+        "synonyms": ["price"]
     }
 }

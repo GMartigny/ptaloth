@@ -46,6 +46,7 @@ main .custom-checkbox {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border: inherit;
+    line-height: 2em;
 }
 #switch:before {
     content: "Ptaloth";
@@ -60,7 +61,7 @@ main .custom-checkbox {
     transition: height .3s ease-out;
 }
 #switch:checked:after {
-    height: calc(1.5em + 2px);
+    height: calc(2em + 2px);
 }
 
 .btn {
@@ -83,7 +84,7 @@ main .custom-checkbox {
     transition: height .3s ease-out;
 }
 #showKeyboard:checked ~ #keyboard {
-    height: calc(5 * 42px);
+    height: calc(5 * 44px);
     overflow: auto;
 }
 
@@ -95,4 +96,7 @@ main .custom-checkbox {
 }
 #keyboard img:hover {
     border-color: #333;
+}
+#keyboard img:active {
+    background-color: #868e96;
 }
