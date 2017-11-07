@@ -1,3 +1,7 @@
+Maybe, have a look at [Bliss language](http://www.blissymbolics.org/images/bliss-rules.pdf)
+
+---
+
 ##Some criticism (those are my opinions and in no way facts
 
 Some ideogram are composed of others :
@@ -29,10 +33,8 @@ Some ideograms look alike but don't mean the same at all :
 * ...
 
 
-"amar" (family) is composed of "koga" (mother) + "kago" (father) + "kige" (sibling)
+"amar" (family) is composed of "koga" (mother) + "kago" (father) + "kige" (sibling).
 That's not the only way to have a family.
 
 Their's no plural or tenses ?
 But their's "yo" (am) and "nel" (is) ?
-
-Maybe, have a look at [Bliss language](http://www.blissymbolics.org/images/bliss-rules.pdf)
