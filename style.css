@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    color: #333;
+}
+main {
+    margin-top: 20px;
+}
+main .custom-checkbox {
+    padding-left: .25rem;
+}
+
+#clear {
+    width: .7em;
+    box-sizing: content-box;
+}
+#clear:before, #clear:after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 50%;
+    background-color: #FFF;
+    top: 25%;
+    left: calc(50% - 2px);
+    border-radius: 2px;
+    transform: rotate3d(0, 0, 1, 45deg);
+}
+#clear:after {
+    transform: rotate3d(0, 0, 1, -45deg);
+}
+
+#switch {
+    position: relative;
+    top: -2px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 0;
+    outline: none;
+}
+#switch:before, #switch:after {
+    position: absolute;
+    top: -2px;
+    text-align: center;
+    width: 80px;
+    border-radius: inherit;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border: inherit;
+}
+#switch:before {
+    content: "Ptaloth";
+    color: #333;
+}
+#switch:after {
+    content: "English";
+    color: inherit;
+    background-color: inherit;
+    overflow: hidden;
+    height: 0;
+    transition: height .3s ease-out;
+}
+#switch:checked:after {
+    height: calc(1.5em + 2px);
+}
+
+.btn {
+    cursor: pointer;
+}
+.btn.btn-secondary:active {
+    box-shadow: none !important;
+}
+
+#btnToggleKeyboard {
+    text-align: center;
+    display: block;
+}
+#showKeyboard {
+    display: none;
+}
+#keyboard {
+    overflow: hidden;
+    height: 0;
+    transition: height .3s ease-out;
+}
+#showKeyboard:checked ~ #keyboard {
+    height: calc(5 * 42px);
+    overflow: auto;
+}
+
+#keyboard img {
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+#keyboard img:hover {
+    border-color: #333;
+}

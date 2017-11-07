@@ -163,6 +163,7 @@
     },
     "asik": {
         "meaning": "open",
+        "synonyms": ["reveal"],
         "draw": [[1, 5, 3], [4, 6], [5, 8]]
     },
     "anak": {
@@ -275,6 +276,7 @@
     },
     "bsel": {
         "meaning": "alive",
+        "synonyms": ["life"],
         "draw": [[2, 6, 8, 4, 2]]
     },
     "kan": {
@@ -641,7 +643,8 @@
         "draw": ["top", [4, 8, 6], [3, 9]]
     },
     "diredim": {
-        "meaning": "meme",
+        "meaning": "internet",
+        "synonyms": ["meme"],
         "draw": [[4, 1, 2, 5, 7], [5, 6], [3, 6, 8]]
     },
     "sha": {
@@ -760,7 +763,7 @@
     },
     "gan": {
         "meaning": "mouth",
-        "draw": [1, 3, 6, 4]
+        "draw": [[1, 3, 6, 4]]
     },
     "ton": {
         "meaning": "hand",
