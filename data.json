@@ -446,7 +446,7 @@
         "meaning": "left leg",
         "draw": [[1, 3], [2, 5, 9]]
     },
-    "boi": {
+    "dlod": {
         "meaning": "head",
         "draw": [[1, 3], "top", [7, 5, 9]]
     },
@@ -677,7 +677,7 @@
         "meaning": "lake",
         "draw": ["top", [2, 8, 4]]
     },
-    "anome": {
+    "onome": {
         "meaning": "hill",
         "draw": [[1, 3, 6, 4, 1], [2, 8, 4]]
     },
@@ -776,7 +776,7 @@
         "meaning": "mouth",
         "draw": [[1, 3, 6, 4]]
     },
-    "ton": {
+    "vit": {
         "meaning": "hand",
         "draw": [[1, 3], [4, 2, 6]]
     },
@@ -963,12 +963,12 @@
         "synonyms": ["five"],
         "draw": [[4, 6], [5, 8], [7, 9]]
     },
-    "en": {
+    "iz": {
         "meaning": "6",
         "synonyms": ["six"],
         "draw": [[2, 5], [4, 6], [7, 9]]
     },
-    "iz": {
+    "en": {
         "meaning": "7",
         "synonyms": ["seven"],
         "draw": [[2, 8], [4, 6], [7, 9]]
@@ -1013,31 +1013,52 @@
         "synonyms": ["fifteen"],
         "draw": [[1, 3], [2, 8], [4, 6], [7, 9]]
     },
-    "kal pel": {
+    "kalpel": {
         "meaning": "hello",
-        "synonyms": ["hi"]
+        "synonyms": ["hi"],
+        "split": ["kal", "pel"]
     },
-    "pel mai": {
-        "meaning": "bye"
+    "pelmai": {
+        "meaning": "bye",
+        "split": ["pel", "mai"]
     },
-    "aamo fen": {
-        "meaning": "thank"
+    "aamofen": {
+        "meaning": "thank",
+        "split": ["aamo", "fen"]
     },
-    "nose mu": {
+    "nosemu": {
         "meaning": "seat",
-        "synonyms": ["chair"]
+        "synonyms": ["chair"],
+        "split": ["nose", "mu"]
     },
-    "kika tol": {
-        "meaning": "computer"
+    "kikatol": {
+        "meaning": "computer",
+        "synonyms": ["laptop"],
+        "split": ["kika", "tol"]
     },
-    "aki kan": {
-        "meaning": "sorry"
+    "akikan": {
+        "meaning": "sorry",
+        "split": ["aki", "kan"]
     },
-    "nipel nelon": {
-        "meaning": "help"
+    "nipelnelon": {
+        "meaning": "help",
+        "split": ["nipel", "nelon"]
     },
-    "ream pelni": {
+    "reampelni": {
         "meaning": "cost",
-        "synonyms": ["price"]
+        "synonyms": ["price"],
+        "split": ["ream", "pelni"]
+    },
+    "nenea": {
+        "meaning": "angel",
+        "split": ["ne", "nea"]
+    },
+    "ganfen": {
+        "meaning": "happy",
+        "split": ["gan", "fen"]
+    },
+    "dlodhentol": {
+        "meaning": "headphones",
+        "split": ["dlod", "hen", "tol"]
     }
 }
